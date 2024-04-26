@@ -23,9 +23,7 @@ let userAnswer = await inquirer.prompt([{
     name: "amount",
     message: "Enter your amount",
     type: "number"
-}
-]
-)
+}])
 let fromAmount = currency[userAnswer.From]
 let toAmount = currency[userAnswer.to]
 let amount = userAnswer.amount
